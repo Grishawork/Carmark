@@ -1,0 +1,24 @@
+/* reset */
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, p{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+button{
+    border: 0;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
