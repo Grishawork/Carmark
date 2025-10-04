@@ -22,3 +22,58 @@ button{
     max-width: 1280px;
     margin: 0 auto;
 }
+.header-menu{
+    padding-top: 46px;
+    padding-bottom: 132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu>li{
+    margin-right: 40px;
+}
+.menu>li:last-child{
+    margin-right: 0;
+}
+.menu>li>a{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+.menu>li>a:hover{
+    font-weight: 600;
+    color: #fa002c;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+}
+.social{
+    display: flex;
+    margin-right: 32px;
+}
+.social>li{
+    margin-right: 12px;
+}
+.social>li:last-child{
+    margin-right: 0;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+}
+.phone>a{
+    margin-bottom: 4px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+.phone>a:last-child{
+    margin-bottom: 0;
+}
