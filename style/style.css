@@ -77,3 +77,127 @@ button{
 .phone>a:last-child{
     margin-bottom: 0;
 }
+h1{
+    font-family: "Inter", sans-serif;
+    max-width: 672px;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 119%;
+    color: #000;
+    margin-bottom: 20px;
+}
+.header-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000;
+    margin-bottom: 44px; 
+    max-width: 600px;  
+}
+.header-info>button{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    padding: 18px 54.5px;
+    margin-bottom: 151px;
+}
+.header-info{
+    position: relative;
+}
+.header-info>img{
+    position: absolute;
+    right: -116px;
+    top: 0;
+    z-index: -1;
+}
+.buy{
+    background: #f4f6f8;
+    padding-top: 129px;
+    padding-bottom: 119px;
+}
+.title{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 123%;
+    color: #000;
+}
+.center{
+    text-align: center;
+}
+.buy-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buy-info>h2{
+    max-width: 1014px;
+}
+.buy-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
+.buy-info>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    padding: 14px 40px;
+    margin-bottom: 40px;
+}
+.buy-box{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-item{
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    padding: 21px 54px 91px 32px;
+}
+.buy-item>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 122%;
+    color: #000;
+    margin-bottom: 27px;
+}
+.buy-item>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 302px;
+}
+.buy-item>img{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.buy-item>.trinket{
+    right: 30px;
+    bottom: 18px;
+}
+.buy-item>.fer{
+    right: 10.61px;
+}
+.buy-item>.coins{
+    right: 16px;
+    bottom: 17px;
+}
