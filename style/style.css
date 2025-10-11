@@ -206,7 +206,7 @@ h1{
 }
 .about-img{
     flex-basis: 47.29%;
-    background: url('../img/ubout.png');
+    background: url('../img/about.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
