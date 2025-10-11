@@ -201,3 +201,59 @@ h1{
     right: 16px;
     bottom: 17px;
 }
+.about{
+    display: flex;
+}
+.about-img{
+    flex-basis: 47.29%;
+    background: url('../img/ubout.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-info{
+    flex-basis: 52.71%;
+    padding: 52px 0 50px 100px;
+}
+.about-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    max-width: 512px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.about-info>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    padding: 14px 40px;
+}
+.about-info>ul>li{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    margin-bottom: 38px;
+    margin-left: 76px;
+    position: relative;
+}
+.about-info>ul>li:last-child{
+    margin-bottom: 19px;
+}
+.about-info>ul>li::before{
+    position: absolute;
+    content: '';
+    width: 52px;
+    height: 52px;
+    background: #f50e30;
+    border-radius: 100%;
+    left: -76px;
+    top: -15px;
+}
