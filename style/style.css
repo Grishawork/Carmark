@@ -16,6 +16,7 @@ ul, ol{
 }
 button{
     border: 0;
+    cursor: pointer;
 }
 .container{
     max-width: 1280px;
@@ -388,4 +389,99 @@ h1{
 }
 .swiper-wrapper{
     padding-bottom: 28px;
+}
+.slider-btn{
+    position: relative;
+}
+.left, .right{
+    position: absolute;
+    z-index: 2;
+    top: 329px;
+}
+.left{
+    left: -53px;
+}
+.right{
+    right: 0;
+    right: -53px;
+}
+.left>img, .right>img{
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active{
+    background: #fa002c !important;
+}
+.swiper-pagination-bullet{
+    width: 100px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
+}
+.budget>div{
+    padding: 143px 0 78px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.budget>div>img{
+    border-radius: 20px;
+}
+.budget>div>div{
+    padding: 0 0 39px 60px;
+}
+.budget>div>div>h2{
+    max-width: 566px;
+}
+.budget>div>div>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 566px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.budget>div>div>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    padding: 14px 40px;
+}
+.videoYT{
+    padding: 100px 0;
+    background: #f4f6f8;
+}
+.telegram>div{
+    display: flex;
+    justify-content: space-between;
+}
+.telegram>div>img{
+    border-radius: 20px;
+}
+.telegram>div>div{
+    padding: 57px 0px 42px 77px;
+}
+.telegram>div>div>h2{
+    max-width: 675px;
+}
+.telegram>div>div>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    color: #fff;
+    border-radius: 8px;
+    background: #f50e30;
+    padding: 14px 40px;
+    margin-top: 40px;
+    margin-bottom: 42px;
+}
+
+
+
+.process{
+    padding: 100px 0;
 }

@@ -107,6 +107,14 @@
         <div class="container">
             <h2 class="title">Какие авто привозим?</h2>
             <p>Привозим авто не старше 7 лет на момент растаможки.</p>
+            <div class="slider-btn">
+                <div class="left">
+                    <img src="img/button-left.svg" alt="button-left">
+                </div>
+                <div class="right">
+                    <img src="img/button-right.svg" alt="button-right">
+                </div>
+            </div>
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -407,15 +415,40 @@
                         <button>Оставить заявку</button>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <section class="budget">
+        <div class="container">
+            <div>
+                <h2 class="title">Мы советуем подбирать автомобиль с бюджетом от <span style="color: #F50E30;">1,3 млн</span></h2>
+                <p>c учетом расходов на доставку, растаможку и наши услуги.</p>
+                <button>Оставить заявку</button>
+            </div>
+            <img src="img/budget-car.png" alt="car">
+        </div>
+    </section>
+    <section class="videoYT">
+        <div class="videoYTClider">
+            <h2 class="title center">Обзоры привезенных авто</h2>
+        </div>
+        <div class="telegram">
+            <div class="container">
+                <img src="img/carTelegram.png" alt="carTelegram">
+                <div>
+                    <h2 class="title">Посмотрите реальные истории в нашем <span style="color: #F50E30;">Telegram-канале</span></h2>
+                    <button>Перейти в Telegram </button>
+                </div>
+            </div>
+        </div>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/oRF4ujUOgxw?si=AV0QqG76KzIpvFVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    </section>
+    <section class="process">
+        <div class="container">
+            <h2 class="title">Процесс покупки</h2>
+        </div>
+    </section>
     <section></section>
     <section></section>
     <section></section>
@@ -440,8 +473,8 @@
         clickable: true,
       },
        navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".right",
+        prevEl: ".left",
       },
     });
   </script>
