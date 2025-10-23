@@ -454,6 +454,58 @@ h1{
     padding: 100px 0;
     background: #f4f6f8;
 }
+.videoYTClider{
+    padding: 0 30px;
+}
+.videoYTClider>h2{
+    margin-bottom: 40px;
+}
+.myvideo>.swiper-wrapper>.swiper-slide{
+    /* box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 24px; */
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.swiper-pagination{
+    bottom: -4px !important;
+}
+.myvideo>.swiper-wrapper>{
+    padding-bottom: 28px;
+}
+.slider-btn{
+    position: relative;
+}
+.left-car, .right-car{
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+}
+.left-car{
+    left: 100px;
+}
+.right-car{
+    right: 0;
+    right: 100px;
+}
+.left-car>img, .right-car>img{
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active{
+    background: #fa002c !important;
+}
+.swiper-pagination-bullet{
+    width: 100px !important;
+    height: 4px !important;
+    border-radius: 0 !important;
+}
+
+
+.telegram{
+    margin-top: 100px;
+}
 .telegram>div{
     display: flex;
     justify-content: space-between;
@@ -479,9 +531,6 @@ h1{
     margin-top: 40px;
     margin-bottom: 42px;
 }
-
-
-
 .process{
     padding: 100px 0;
 }

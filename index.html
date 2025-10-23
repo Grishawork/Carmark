@@ -432,6 +432,28 @@
     <section class="videoYT">
         <div class="videoYTClider">
             <h2 class="title center">Обзоры привезенных авто</h2>
+            <div class="slider-btn">
+                <div class="left-car">
+                    <img src="img/button-left.svg" alt="button-left">
+                </div>
+                <div class="right-car">
+                    <img src="img/button-right.svg" alt="button-right">
+                </div>
+            </div>
+            <div class="swiper myvideo">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oRF4ujUOgxw?si=AV0QqG76KzIpvFVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
         </div>
         <div class="telegram">
             <div class="container">
@@ -442,7 +464,6 @@
                 </div>
             </div>
         </div>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/oRF4ujUOgxw?si=AV0QqG76KzIpvFVF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
     </section>
     <section class="process">
         <div class="container">
@@ -460,7 +481,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    var swiper = new Swiper(".mySwiper", {
+    var swiper1 = new Swiper(".mySwiper", {
       slidesPerView: 3,
       spaceBetween: 24,
       loop: true,
@@ -475,6 +496,20 @@
        navigation: {
         nextEl: ".right",
         prevEl: ".left",
+      },
+    });
+
+    var swiper2 = new Swiper(".myvideo", {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+       navigation: {
+        nextEl: ".right-car",
+        prevEl: ".left-car",
       },
     });
   </script>
