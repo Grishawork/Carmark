@@ -470,11 +470,23 @@ h1{
     border: none;
     display: block;
 }
+.myvideo>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
 .swiper-pagination{
     bottom: -4px !important;
 }
 .myvideo>.swiper-wrapper>{
     padding-bottom: 28px;
+}
+.span-YT{
+    font-weight: 700;
 }
 .slider-btn{
     position: relative;
@@ -482,14 +494,14 @@ h1{
 .left-car, .right-car{
     position: absolute;
     z-index: 2;
-    top: 0px;
+    top: 100px;
 }
 .left-car{
-    left: 100px;
+    left: 205px;
 }
 .right-car{
     right: 0;
-    right: 100px;
+    right: 205px;
 }
 .left-car>img, .right-car>img{
     cursor: pointer;
@@ -502,8 +514,6 @@ h1{
     height: 4px !important;
     border-radius: 0 !important;
 }
-
-
 .telegram{
     margin-top: 100px;
 }
