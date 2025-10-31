@@ -22,6 +22,11 @@ button{
     max-width: 1280px;
     margin: 0 auto;
 }
+summary{
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
 .header-menu{
     padding-top: 46px;
     padding-bottom: 132px;
@@ -488,6 +493,9 @@ h1{
 .span-YT{
     font-weight: 700;
 }
+.highlighter{
+    color: #f50e30;
+}
 .slider-btn{
     position: relative;
 }
@@ -544,4 +552,72 @@ h1{
 }
 .process{
     padding: 100px 0;
+}
+.process>.container>h2{
+    margin-bottom: 40px;
+}
+.process>.container>details{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 32px 0 40px 109px;
+}
+  .process>.container>details:first-child{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+  .process>.container>details:last-child{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.process>.container>details>summary{
+    display: flex;
+    align-items: center;
+}
+.process>.container>details>summary>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    color: #f50e30;
+}
+.process>.container>details>summary>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    color: #000;
+    margin-left: 122px;
+}
+  .process>.container>details>summary::before{
+    content: "";
+    background-image: url('../img/button-top.svg');
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    transition: transform 0.6s ease;
+    right: 0;
+     top: 0;
+}
+ .process>.container>details[open] summary::before{
+    transform: rotate(180deg);
+}
+.process-info{
+    display: flex;
+    justify-content: space-between;
+    max-width: 954px;
+    margin-left: 204px;
+    margin-top: 24px;
+}
+.process-info>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+}
+.process-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 520px;
 }
