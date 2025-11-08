@@ -733,7 +733,7 @@ h1{
     color: rgba(0, 0, 0, 0.8);
 }
 .team{
-    padding: 100px 0;
+    padding: 100px 0 76px 0;
     background: #f4f6f8;
 }
 .team>.container>.title{
@@ -758,6 +758,7 @@ h1{
     width: 411px;
     height: 496px;
     position: relative;
+    margin-bottom: 24px;
 }
 .team-item>img{
     border-radius: 20px;
@@ -767,4 +768,74 @@ h1{
 }
 .team-item>h3, .team-item>p, .team-item>a, .team-mess, .team-item>img{
     position: absolute;
+}
+.team-item>h3{
+    left: 32px;
+    bottom: 164px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+}
+.team-item>p{
+    left: 32px;
+    bottom: 132px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.team-item>a{
+    left: 32px;
+    bottom: 84px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #f50e30;
+}
+.team-mess{
+    left: 32px;
+    bottom: 32px;
+    display: flex;
+}
+.team-mess>a{
+    margin-right: 12px;
+}
+.team-mess>a:last-child{
+    margin-right: 0px;
+}
+.consalt{
+    background-image: url('../img/consalt.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 127px 0 100px 0;
+}
+.consalt-box{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    margin-left: 19px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px 32px 50px 32px;
+}
+.form>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    margin-bottom: 12px;
+}
+.form>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 393px;
+    margin-bottom: 20px;
 }
