@@ -474,6 +474,7 @@ h1{
     height: 100%;
     border: none;
     display: block;
+    border-radius: 20px;
 }
 .myvideo>p{
     font-family: "Inter", sans-serif;
@@ -505,11 +506,11 @@ h1{
     top: 100px;
 }
 .left-car{
-    left: 205px;
+    left: 14%;
 }
 .right-car{
     right: 0;
-    right: 205px;
+    right: 14%;
 }
 .left-car>img, .right-car>img{
     cursor: pointer;
@@ -560,10 +561,10 @@ h1{
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     padding: 32px 0 40px 109px;
 }
-  .process>.container>details:first-child{
+.process>.container>details:first-child{
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
-  .process>.container>details:last-child{
+.process>.container>details:last-child{
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .process>.container>details>summary{
@@ -585,7 +586,7 @@ h1{
     color: #000;
     margin-left: 122px;
 }
-  .process>.container>details>summary::before{
+.process>.container>details>summary::before{
     content: "";
     background-image: url('../img/button-top.svg');
     background-repeat: no-repeat;
@@ -596,7 +597,7 @@ h1{
     right: 0;
      top: 0;
 }
- .process>.container>details[open] summary::before{
+.process>.container>details[open] summary::before{
     transform: rotate(180deg);
 }
 .process-info{
@@ -805,6 +806,68 @@ h1{
 }
 .team-mess>a:last-child{
     margin-right: 0px;
+}
+.questions{
+    padding: 100px 0;
+}
+.questions>.container>details>summary{
+    display: flex;
+    align-items: center;
+}
+.questions>.container>h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 123%;
+    color: #000;
+    margin-bottom: 40px;
+}
+.questions>.container>details{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 24px 0 24px 24px;
+}
+.questions>.container>details:first-child{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.questions>.container>details:last-child{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.questions>.container>details>summary::before{
+    content: "";
+    background-image: url('../img/plus.svg');
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    transition: transform 0.6s ease;
+    right: 0;
+    top: 0;
+}
+.questions>.container>details[open] summary::before{
+    content: "";
+    background-image: url('../img/minus.svg');
+    background-repeat: no-repeat;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    transition: transform 0.6s ease;
+    right: 0;
+    top: 0px;
+}
+.questions>.container>details>summary>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    margin: 16px 0;
+}
+.questions>.container>details>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.8);
 }
 .consalt{
     background-image: url('../img/consalt.png');
