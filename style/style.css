@@ -1,3 +1,4 @@
+/* 1200 1024 992 768 540 480 375 360 320 */
 body{
     margin: 0;
     padding: 0;
@@ -19,7 +20,8 @@ button{
     cursor: pointer;
 }
 .container{
-    max-width: 1280px;
+    max-width: 1248px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 summary{
@@ -760,6 +762,7 @@ h1{
     height: 496px;
     position: relative;
     margin-bottom: 24px;
+    border-radius: 20px;
 }
 .team-item>img{
     border-radius: 20px;
@@ -949,4 +952,176 @@ form>button{
 #checkbox{
     width: 20px;
     height: 20px;
+}
+.form-social{
+    display: flex;
+}
+.form-social>a{
+    border: 1px solid #fa002c;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    display: flex;
+    margin-right: 12px;
+}
+.form-social>a:last-child{
+    margin-right: 0;
+}
+.form-social>a>img{
+    margin-right: 8px;
+}
+.calc-info{
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 100px 72px 40px;
+}
+.calc-info>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 123%;
+    color: #000;
+    max-width:621px ;
+    margin-bottom: 46px;
+}
+.calc-info>ul>li{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    max-width: 513px;
+    margin-bottom: 24px;
+    margin-left: 51px;
+    position: relative;
+}
+.calc-info>ul>li:last-child{
+    margin-bottom: 0;
+}
+.calc-info>ul>li::before{
+    position: absolute;
+    content: '';
+    background-image: url('../img/check-mark.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    left: -51px;
+    top: 10px;
+}
+footer{
+    background: #f4f6f8;
+    padding-top: 100px;
+    padding-bottom: 43px;
+}
+.footer-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 56px;
+}
+.footer-item>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+.footer-item>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    max-width: 273px;
+}
+.footer-item:first-child{
+    margin-right: 154px;
+}
+.footer-item:nth-child(2){
+    margin-right: 161px;
+}
+.footer-item:nth-child(3){
+    margin-right: 250px;
+}
+.footer-item:nth-child(4){
+    margin-top: 40px;
+    margin-right: 244px;
+}
+.footer-item>a{
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+}
+.footer-item:last-child{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.footer-item:last-child>a{
+    display: inline-block;
+    margin-right: 12px;
+}
+.map>iframe{
+    border-radius: 18px;
+}
+.footer-bottom{
+    margin-top: 55px;
+}
+.footer-bottom>a{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.3);
+    margin-right: 127px;
+}
+.footer-bottom>a:last-child{
+    margin-right: 0;
+}
+@media (max-width: 1200px) {
+    .header-info>img{
+        width: 600px;
+        right: -14px;
+    }
+    .right{
+        right: -15px;
+    }
+    .left{
+        left: -15px;
+    }
+    .buy-item{
+        padding-left: 18px;
+        padding-right: 58px;
+    }
+    .swiper-slide>button{
+        padding-left: 79px;
+        padding-right: 79px;
+    }
+    .swiper-slide>img{
+        width: 324px;
+        height: 211px;
+    }
+    .guaranree-item{
+       padding: 30px 24px;; 
+    }
+    .advantage1{
+        padding: 40px 20px 40px 20px;
+    }
+    .advantage2{
+        padding: 40px 18px 40px 18px; 
+    }
+    .team-item{
+        width: 376px;
+    }
+    .calc-info{
+        padding-right: 0;
+    }
 }
