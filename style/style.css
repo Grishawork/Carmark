@@ -636,6 +636,157 @@ h1{
 .process-info>p>a>img{
     margin-right: 10px;
 }
+.equipment{
+    padding: 100px 0;
+    background: #f4f6f8;
+}
+.equipment>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.equipment-list{
+    padding: 52px 29px 36px 60px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    margin-right: 24px;
+}
+.equipment-list>ul>li::before{
+    position: absolute;
+    width: 36px;
+    height: 36px;    
+    left: -51px;
+    top: 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: '';
+    background-image: url('../img/cruise-control.svg');
+}
+.equipment-list>ul>li:first-child::before{
+    background-image: url('../img/pillow.svg');
+}
+.equipment-list>ul>li:last-child::before{
+    background-image: url('../img/road.svg');
+}
+.equipment-list>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 412px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+}
+.equipment-list>ul>li{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    padding-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 59px;
+    position: relative;
+}
+.equipment-list>ul>li:nth-child(2){
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+.equipment-button{
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    padding: 52px 99px 52px 60px;
+}
+.equipment-button-info{
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+.equipment-button-info:last-child{
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+.equipment-button-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+    margin-bottom: 16px;
+}
+.equipment-button-info>span{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 117%;
+    color: #fa002c;
+}
+.equipment-button-info-span:last-child{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+}
+.equipment-button>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    padding: 14px 40px;
+}
+.cars200{
+    padding: 100px 0;
+}
+.cars200>.container{
+    display: flex;
+    justify-content: space-between;
+}
+.cars200-info>h2{
+    max-width: 646px;
+}
+.cars200-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.cars200-info>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    padding: 14px 40px;
+    margin-bottom: 45px;
+}
+.cars200-many>div{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #000;
+    max-width: 350px;
+    padding: 16px 30px;
+    border: 3px solid rgba(250, 0, 44, 0.15);
+    border-radius: 10px;
+    margin-top: 117px;
+}
+.cars200-many>div>span{
+    font-weight: 700;
+    font-size: 36px;
+    color: #f50e30;
+}
 .our-guarantee{
     background-image: url('../img/guarantee.png');
     background-repeat: no-repeat;
@@ -736,7 +887,7 @@ h1{
     color: rgba(0, 0, 0, 0.8);
 }
 .team{
-    padding: 100px 0 76px 0;
+    padding-top: 100px;
     background: #f4f6f8;
 }
 .team>.container>.title{
