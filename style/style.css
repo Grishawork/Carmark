@@ -508,7 +508,8 @@ h1{
 .left-car, .right-car{
     position: absolute;
     z-index: 2;
-    top: 100px;
+    top: 50%;
+    transform: translate(-50%, 0);
 }
 .left-car{
     left: 14%;
@@ -745,6 +746,20 @@ h1{
 .cars200{
     padding: 100px 0;
 }
+.cars200>.container>button{
+    display: none;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    margin-top: 28px;
+}
 .cars200-0{
     display: flex;
     justify-content: space-between;
@@ -786,6 +801,7 @@ h1{
     margin-top: 117px;
 }
 .cars200-many>div>span{
+    display: block;
     font-weight: 700;
     font-size: 36px;
     color: #f50e30;
@@ -1562,6 +1578,43 @@ footer{
         padding: 16px 0;
         width: 100%;
     }
+    .buyCars{
+        padding-bottom: 64px;
+    }
+    .left, .right{
+        display: none;
+    }
+    .mySwiper>.swiper-wrapper>.swiper-slide{
+        padding: 20px 16px;
+        width: 308px !important;
+    }
+    .swiper-slide>img{
+        width: 276px;
+        height: 210px;
+        text-align: left;
+    }
+    .swiper-slide>h3{
+        margin-top: 16px;
+        font-size: 24px;
+        text-align: left;
+    }
+    .price-info{
+        max-width: 116px;
+    }
+    .price-second{
+        font-size: 24px;
+    }
+    .price-key{
+        font-size: 24px;
+    }
+    .swiper-slide>button{
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    .swiper-pagination-bullet{
+        width: 70px !important;
+        height: 4px !important;
+    }
     .budget>div{
         flex-direction: column-reverse;
         padding: 64px 0;
@@ -1589,6 +1642,24 @@ footer{
     }
     .telegram>div{
         flex-direction: column;
+    }
+    .videoYTClider>.center{
+        margin-bottom: 20px;
+        max-width: 282px;
+    }
+    .left-car, .right-car{
+        display: none;
+    }
+    .myvideo>.swiper-wrapper>.swiper-slide{
+        width: 343px !important;
+    }
+    .myvideo>p{
+        font-size: 20px;
+        line-height: 140%;
+        text-align: start;
+    }
+    .myvideo>.swiper-wrapper{
+        padding-bottom: 15px;
     }
     .telegram>div>div{
         padding: 0;
@@ -1772,6 +1843,9 @@ footer{
         text-align: center;
         margin-top: 12px;
     }
+    .cars200>.container>button{
+        display: block;
+    }
     .cars200{
         padding: 64px 0;
     }
@@ -1800,7 +1874,12 @@ footer{
         font-weight: 800;
         font-size: 28px;
         line-height: 143%;
-        display: block;
+    }
+    .left-carmini, .right-carmini{
+        display: none;
+    }
+    .myvideomini>.swiper-wrapper>.swiper-slide{
+        width: 280px !important;
     }
     .team{
         padding-top: 64px;
@@ -1875,9 +1954,6 @@ footer{
         line-height: 140%;
         max-width: 237px;
     }
-    /* .questions>.container>details>summary{
-        align-items: center;
-    } */
     .questions>.container>details>summary::before{
         height: 44px;
         width: 44px;
