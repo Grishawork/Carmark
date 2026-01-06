@@ -1,4 +1,4 @@
-/* 1200 1024 992 768 540 480 735 360 320 */
+/* 1200 1024 992 768 540 480 375 360 320 */
 body{
     margin: 0;
     padding: 0;
@@ -178,6 +178,10 @@ h1{
     border-radius: 20px;
     position: relative;
     padding: 21px 54px 91px 32px;
+    margin-right: 25px;
+}
+.buy-item:last-child{
+    margin-right: 0;
 }
 .buy-item>h3{
     font-family: "Inter", sans-serif;
@@ -596,12 +600,13 @@ h1{
     content: "";
     background-image: url('../img/button-top.svg');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 64px;
     height: 64px;
     position: absolute;
     transition: transform 0.6s ease;
     right: 0;
-     top: 0;
+    top: 0;
 }
 .process>.container>details[open] summary::before{
     transform: rotate(180deg);
@@ -660,7 +665,8 @@ h1{
     width: 36px;
     height: 36px;    
     left: -51px;
-    top: 6px;
+    top: 50%;
+    transform: translateY(-40%);
     background-repeat: no-repeat;
     background-position: center;
     content: '';
@@ -1226,7 +1232,8 @@ form>button{
     width: 36px;
     height: 36px;
     left: -51px;
-    top: 10px;
+    top: 50px;
+    transform: translateY(-50%);
 }
 footer{
     background: #f4f6f8;
@@ -1404,10 +1411,1188 @@ footer{
     .form{
         border-top-right-radius:0;
         border-bottom-right-radius:0;
+        margin-right: 0;
+        margin-left: 0;
     }
     .calc-info{
         border-top-left-radius:0;
         border-bottom-left-radius:0;
+    }
+}
+@media (max-width: 1024px) {
+    .title{
+        font-size: 30px;
+    }
+    .buy-item{
+        padding: 21px 32px 91px 32px;
+        margin-right: 15px;
+    }
+    .buy-item>h3{
+        font-size: 30px;
+    }
+    .about-info{
+        padding: 52px 0 50px 50px;
+    }
+    .budget>div{
+        padding: 143px 16px 78px 0;
+    }
+    .budget>div>div{
+        padding: 0 0 39px 30px;
+    }
+    .budget>div>div>h2{
+        max-width: 400px;
+    }
+    .budget>div>div>p{
+        max-width: 400px;
+    }
+    .budget>div>img{
+        width: 550px;
+        height: auto;
+    }
+    .telegram>div>img{
+        width: 550px;
+        height: auto;
+    }
+    .telegram>div>div{
+        padding: 57px 0px 42px 40px;
+    }
+    .process>.container>details{
+        padding: 32px 0 40px 40px;
+    }
+    .process-info{
+        margin-left: 40px;
+    }
+    .guarantee{
+        justify-content: space-evenly;
+    }
+    .guarantee-info>p{
+        font-size: 20px;
+        max-width: 600px;
+    }
+    .equipment-list{
+        margin-right: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .equipment-button{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    .cars200-many>div{
+        max-width: 300px;
+        margin-top: 80px;
+    }
+    .cars200-info>p{
+        max-width: 550px;
+    }
+    .cars200-info>h2{
+        max-width: 550px;
+    }
+    .left-carmini, .right-carmini{
+        transform: translateX(0);
+    }
+    .questions>.container>details>summary>h3{
+        max-width: 760px;
+    }
+    .calc-info>h3{
+        font-size: 36px;
+    }
+    .calc-info>ul>li{
+        max-width: 380px;
+    }
+    form>button{
+        padding: 16px 46px;
+    }
+    .calc-info{
+        padding-right: 10px;
+    }
+    .footer-item:first-child{
+        margin-right: 75px;
+    }
+    .footer-item:nth-child(2){
+        margin-right: 75px;
+    }
+    .footer-item:nth-child(3){
+        margin-right: 75px;
+    }
+}
+@media(max-width: 992px){
+    .social{
+        margin-right: 20px;
+    }
+    .header-menu{
+        padding-bottom: 70px;
+    }
+    .menu>li{
+        margin-right: 30px;
+    }
+    .buy-info>h2{
+        max-width: 800px;
+    }
+    .buy-info>p{
+        max-width: 760px;
+        text-align: center;
+    }
+    .header-info>img{
+        width: 550px;
+        right: 0;
+        top: 50px;
+    }
+    .buy-item{
+        padding: 21px 20px 140px 20px;
+        margin-right: 0;
+        border-radius: 0;
+    }
+    .buy-item:first-child{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .buy-item:last-child{
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .budget>div>img{
+        width: 520px;
+    }
+    .telegram>div>div>h2{
+        max-width: 550px;
+    }
+    .telegram>div>div{
+        padding-top: 30px;
+    }
+    .telegram>div>img {
+        width: 500px;
+        height: 270px;
+    }
+    .process>.container>details>summary>h3{
+        margin-left: 70px;
+    }
+    form>button {
+        padding: 16px 38px;
+    }
+    .cars200-info>p{
+        max-width: 500px;
+    }
+    .right{
+        right: 0px;
+    }
+    .left{
+        left: 0px;
+    }
+    .header-info>button{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 768px){
+    .title{
+        font-size: 26px;
+    }
+    .header-menu{
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    .logo>img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu>li{
+        margin-right: 10px;
+    }
+    .social{
+        margin-right: 10px;
+    }
+    .social>li{
+        margin-right: 10px;
+    }
+    .social>li>a>img{
+        width: 25px;
+        height: 26px;
+    }
+    .phone>a{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 36px;
+        max-width: 500px;
+    }
+    .header-info>p{
+        font-size: 16px;
+        max-width: 350px;
+        margin-bottom: 26px;
+    }
+    .header-info>img{
+        width: 400px;
+    }
+    .header-info>button{
+        font-size: 18px;
+        padding: 16px 50.5px;
+        margin-bottom: 60px;
+    }
+    .buy{
+        padding-top: 99px;
+        padding-bottom: 89px;
+    }
+    .buy-info>h2{
+        max-width: 680px;
+    }
+    .buy-info>p{
+        max-width: 650px;
+        font-size: 20px;
+    }
+    .buy-info>button{
+        font-size: 18px;
+        padding: 16px 50.5px;
+    }
+    .buy-item{
+        padding-bottom: 90px;
+    }
+    .buy-item>h3{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .trinket{
+        width: 85px;
+    }
+    .fer {
+        width: 160px;
+    }
+    .coins {
+        width: 140px;
+    }
+    .about-info {
+        padding: 52px 0 50px 50px;
+    }
+    .about-info {
+        padding: 20px 0 30px 30px;
+    }
+    .about-info>p {
+        font-size: 16px;
+        max-width: 320px;
+    }
+    .about-info>ul>li{
+        margin-left: 60px;
+        font-size: 16px;
+    }
+    .about-info>ul>li::before{
+        width: 48px;
+        height: 48px;
+        top: -12px;
+        left: -60px;
+    }
+    .about-info>div{
+        max-width: 320px;
+    }
+    .buyCars>div>p{
+        font-size: 18px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+    .budget>div>img {
+        width: 350px;
+        height: 220px;
+    }
+    .budget>div>div>h2{
+        font-size: 24px;
+        max-width: 340px;
+    }
+    .budget>div>div>p{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .budget>div {
+        padding: 60px 16px 40px 0;
+    }
+    .telegram>div>img{
+        width: 350px;
+        height: 220px;
+    }
+    .telegram>div>div {
+        padding: 27px 0px 20px 20px;
+    }
+    .telegram>div>div>h2{
+        font-size: 26px;
+        max-width: 320px;
+    }
+    .telegram>div>div>button{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .process>.container>details>summary>p{
+        font-size: 60px;
+    }
+    .process>.container>details>summary>h3{
+        margin-left: 50px;
+        font-size: 24px;
+    }
+    .process>.container>details>summary::before{
+        width: 50px;
+        height: 50px;
+        top: 10px;
+    }
+    .process {
+        padding: 80px 0;
+    }
+    .process-info {
+        margin-left: 0;
+    }
+    .process-info>h3{
+        max-width: 210px;
+    }
+    .process-info>p{
+        max-width: 440px;
+    }
+    .our-guarantee{
+        padding: 80px 0;
+    }
+    .guaranree-item>p{
+        font-size: 18px;
+        max-width: 200px;
+    }
+    .guarantee-info>p{
+        font-size: 18px;
+        max-width: 400px;
+    }
+    .guarantee-info>a{
+        font-size: 18px;
+    }
+    .advantage1>h3, .advantage2>h3{
+        font-size: 24px;
+    }
+    .equipment{
+        padding: 80px 0;
+    }
+    .equipment-list{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .equipment-list>p{
+        font-size: 18px;
+    }
+    .equipment-button{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .equipment-button-info>p{
+        font-size: 18px;
+    }
+    .equipment-button-info>span{
+        font-size: 36px;
+    }
+    .equipment-button-info-span:last-child{
+        font-size: 22px;
+    }
+    .equipment-list>ul>li:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .cars200{
+        padding: 80px 0;
+    }
+    .cars200-info>p{
+        font-size: 18px;
+        max-width: 360px;
+    }
+    .cars200-info>h2{
+        max-width: 400px;
+    }
+    .cars200-info>button{
+        font-size: 18px;
+    }
+    .cars200-many>div{
+        font-size: 18px;
+        line-height: 140%;
+        max-width: 270px;
+    }
+    .cars200-many>div>span{
+        font-size: 30px;
+        line-height: 140%;
+    }
+    .team{
+        padding-top: 80px;
+    }
+    .subtitle{
+        margin-top: 20px;
+        margin-bottom: 32px;
+        font-size: 20px;
+    }
+    .team-item{
+        width: 331px;
+    }
+    .videoYT{
+        padding: 80px 0;
+    }
+    .questions{
+        padding: 80px 0;
+    }
+    .questions>.container>h2{
+        font-size: 30px;
+    }
+    .questions>.container>details>summary>h3{
+        max-width: 640px;
+    }
+    .questions>.container>details>p{
+        font-size: 18px;
+        max-width: 640px;
+    }
+    .questions>.container>details>summary::before{
+        width: 50px;
+        height: 50px;
+    }
+    .questions>.container>details[open] summary::before{
+        width: 50px;
+        height: 50px;
+    }
+    .consalt{
+        padding-top: 80px;
+    }
+    .calc-info>h3{
+        font-size: 30px;
+        margin-bottom: 26px;
+    }
+    .calc-info>ul>li{
+        font-size: 18px;
+        max-width: 280px;
+    }
+    form>button{
+        padding: 16px 18px;
+    }
+    footer{
+        padding-top: 80px;
+    }
+    .footer-info{
+        margin-top: 30px;
+    }
+    .footer-item:nth-child(3){
+        margin-top: 40px;
+    }
+    .footer-item:nth-child(4){
+        margin-right: 75px;
+    }
+}
+@media (max-width: 540px){
+    .header-menu{
+        padding-top: 17px;
+        padding-bottom: 43px;
+    }
+    .title{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 129%;
+    }
+    .phone{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .logo>img{
+        width: 48px;
+        height: 48px;
+    }
+    .social{
+        margin-right: 0;
+        /* margin-right: 20px; */
+    }
+    .social>li{
+        margin-right: 12px;
+    }
+    .social>li>a>img{
+        width: 30px;
+        height: 30px;
+    }
+    h1{
+        font-size: 32px;
+        line-height: 113%;
+        margin-bottom: 180px;
+        text-align: start;
+        max-width: 400px;
+    }
+    .header-info>p{
+        margin-bottom: 32px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        max-width: 100%;
+    }
+    .header-info>img{
+        width: 343px;
+        top: 70px;
+        right: 10px;
+    }
+    .header-info>button{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        padding: 16px 0;
+        width: 100%;
+        margin-bottom: 64px; 
+    }
+    .buy{
+        padding: 64px 0;
+    }
+    .buy-info>h2{
+        font-size: 28px;
+        line-height: 129%;
+        text-align: center;
+    }
+    .buy-info>p{
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+    .buy-box{
+        flex-direction: column;
+    }
+    .buy-item{
+        padding: 32px 40px;
+        margin-bottom: 12px;
+        border-radius: 20px;
+    }
+    .buy-item:last-child{
+        padding: 12px 0 31px 40px;
+        margin-bottom: 0px;
+    }
+    .buy-item>h3{
+        font-size: 24px;
+        line-height: 133%;
+        margin: 0 0 16px 100px;
+    }
+    .buy-item>p{
+        line-height: 150%;
+        max-width: 340px;
+    }
+    .buy-item:last-child>h3{
+        margin-bottom: 10px;
+        max-width: 105px;
+    }
+    .trinket{
+        top: 17px;
+        left: 40px;
+        width: 72px;
+    }
+    .fer{
+        top: 15px;
+        left: 12px;
+        width: 120px;
+    }
+    .coins{
+        width: 102px;
+        top: 17px;
+        left: 20px;
+    }
+    .button-buy-info{
+        display: none;
+    }
+    .button-buy-box{
+        display: inline-block;
+        margin-top: 32px;
+        margin-bottom: 0;
+        font-weight: 500;
+        line-height: 120%;
+        text-align: center;
+        padding: 16px 0;
+        width: 100%;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img{
+        background-size: 100% 100%;
+        padding: 172.8px 50%;
+    }
+    .about-info{
+        padding: 32px 16px 64px 16px;
+    }
+    .about-info>p{
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 28px;
+        max-width: 500px;
+    }
+    .about-info>ul>li{
+        font-size: 16px;
+        line-height: 175%;
+        margin-bottom: 38px;
+        margin-left: 60px;
+    }
+    .about-info>ul>li::before{
+        width: 44px;
+        height: 44px;
+        background-size: 32px;
+        left: -60px;
+        top: -8px;
+    }
+    .about-info>div{
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+        max-width: 488px;
+        padding: 9px 17px;
+        border: 3px solid rgba(250, 0, 44, 0.15);
+        border-radius: 10px;
+        margin-bottom: 32px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+    }
+    .about-info>button{
+        font-weight: 500;
+        line-height: 120%;
+        text-align: center;
+        padding: 16px 0;
+        width: 100%;
+    }
+    .buyCars{
+        padding-bottom: 64px;
+    }
+    .left, .right{
+        display: none;
+    }
+    .mySwiper>.swiper-wrapper>.swiper-slide{
+        padding: 20px 16px;
+        width: 308px !important;
+    }
+    .swiper-slide>img{
+        width: 276px;
+        height: 210px;
+        text-align: left;
+    }
+    .swiper-slide>h3{
+        margin-top: 16px;
+        font-size: 24px;
+        text-align: left;
+    }
+    .price-info{
+        max-width: 116px;
+    }
+    .price-second{
+        font-size: 24px;
+    }
+    .price-key{
+        font-size: 24px;
+    }
+    .swiper-slide>button{
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    .swiper-pagination-bullet{
+        width: 70px !important;
+        height: 4px !important;
+    }
+    .budget>div{
+        flex-direction: column-reverse;
+        padding: 64px 0;
+    }
+    .budget>div>img{
+        margin: 0 16px 20px 16px;
+        width: auto;
+        height: 296px;
+    }
+    .budget>div>div{
+        padding: 0 16px;
+    }
+    .budget>div>div>h2{
+        max-width: 500px;
+    }
+    .budget>div>div>p{
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 44px;
+    }
+    .budget>div>div>button{
+        font-weight: 500;
+        line-height: 120%;
+        text-align: center;
+        padding: 16px 0;
+        width: 100%;
+    }
+    .videoYT{
+        padding: 64px 0;
+    }
+    .telegram>div{
+        flex-direction: column;
+    }
+    .videoYTClider>.center{
+        margin-bottom: 20px;
+        max-width: 508px;
+    }
+    .left-car, .right-car{
+        display: none;
+    }
+    .myvideo>.swiper-wrapper>.swiper-slide{
+        width: 343px !important;
+    }
+    .myvideo>p{
+        font-size: 20px;
+        line-height: 140%;
+        text-align: start;
+    }
+    .myvideo>.swiper-wrapper{
+        padding-bottom: 15px;
+    }
+    .telegram>div>img{
+        width: 100%;
+        height: 296px;
+    }
+    .telegram>div>div{
+        padding: 0;
+    }
+    .telegram>div>div>h2{
+        margin-top: 20px;
+        margin-bottom: 32px;
+        max-width: 500px;
+    }
+    .telegram>div>div>button{
+        margin: 0;
+        text-align: center;
+        padding: 16px 0;
+        width: 100%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    .process{
+        padding: 64px 0;
+    }
+    .process>.container>h2{
+        margin-bottom: 32px;
+        line-height: 114%;
+    }
+    .process>.container>details{
+        padding: 28px 0;
+    }
+    .process>.container>details>summary>p{
+        font-size: 52px;
+        line-height: 100%;
+    }
+    .process>.container>details>summary>h3{
+        font-size: 20px;
+        line-height: 120%;
+        margin-left: 20px;
+        max-width: 181px;
+    }
+    .process>.container>details>summary>h3:last-child{
+        max-width: 500px;
+    }
+    .process>.container>details>summary::before{
+        width: 44px;
+        height: 44px;
+        background-size: cover;
+    }
+    .process-info{
+        margin-left: 0;
+        margin-top: 28px;
+        flex-direction: column;
+    }
+    .process-info>h3{
+        margin-bottom: 16px;
+        max-width: 500px;
+    }
+    .process-info>p{
+        font-size: 16px;
+        line-height: 175%;
+        max-width: 500px;
+    }
+    .our-guarantee{
+        padding: 64px 0;
+    }
+    .our-guarantee>.container>.title{
+        text-align: start;
+        line-height: 114%;
+    }
+    .guarantee{
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+    .guaranree-item{
+        padding: 28px 16px; 
+        margin-bottom: 20px;
+    }
+    .guaranree-item>img{
+        width: 44px;
+        height: 44px;
+    }
+    .guaranree-item>p{
+        font-size: 14px;
+        max-width: 150px;
+    }
+    .guarantee-info{
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+    .guarantee-info>p{
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 16px;
+        max-width: 500px;
+    }
+    .guarantee-info>a{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    .our-guarantee>.container>h2:last-child{
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 129%;
+        color: #000;
+    }
+    .our-guarantee>.center{
+        text-align: start;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 129%;
+        margin-left: 16px;
+    }
+    .advantage>.container{
+        margin-top: 32px;
+    }
+    .advantage1, .advantage2{
+        padding: 32px 28px;
+        margin-bottom: 12px;
+    }
+    .advantage1:last-child{
+        margin-bottom: 0;
+    }    
+    .advantage1>h3, .advantage2>h3{
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 16px;
+    }
+    .advantage1>p, .advantage2>p{
+        font-size: 16px;
+        line-height: 150%;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .equipment{
+        padding: 64px 0;
+    }
+    .equipment>.container{
+        flex-direction: column;
+    }
+    .equipment-list{
+        padding: 32px 15px 34px 24px;
+        margin-right: 0;
+        margin-bottom: 12px;
+        border-radius: 20px;
+    }
+    .equipment-list>p{
+        font-size: 16px;
+        line-height: 150%;
+        margin: 20px 0;
+        max-width: 500px;
+    }
+    .equipment-list>ul>li{
+        font-size: 18px;
+        line-height: 156%;
+    }
+    .equipment-list>ul>li:nth-child(2){
+        max-width: 167px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+    .equipment-button{
+        padding: 32px 24px;
+        border-radius: 20px;
+    }
+    .equipment-button-info{
+        margin: 20px 0;
+    }
+    .equipment-button-info>p{
+        font-size: 18px;
+        line-height: 156%;
+        margin-bottom: 4px;
+    }
+    .equipment-button-info>span{
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 125%;
+    }
+    .equipment-button>button{
+        padding: 14px 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+    }
+    .cars200>.container>button{
+        display: block;
+    }
+    .cars200{
+        padding: 64px 0;
+    }
+    .cars200-0{
+        flex-direction: column;
+    }
+    .cars200-info>h2{
+        max-width: 500px;
+    }
+    .cars200-info>p{
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 20px;
+        max-width: 500px;
+    }
+    .cars200-info>button{
+        display: none;
+    }
+    .cars200-many>div{
+        margin-bottom:32px;
+        margin-top: 0;
+        padding: 16px 26px 16px 24px;
+        font-size: 18px;
+        line-height: 156%;
+        font-weight: 500;
+        box-sizing: border-box;
+        max-width: 360px;
+        width: 100%;
+    }
+    .cars200-many>div>span{
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 143%;
+    }
+    .left-carmini, .right-carmini{
+        display: none;
+    }
+    .myvideomini>.swiper-wrapper>.swiper-slide{
+        width: 280px !important;
+    }
+    .team{
+        padding-top: 64px;
+    }
+    .team-item:last-child{
+        margin-bottom: 0;
+    }
+    .subtitle{
+        font-size: 16px;
+        line-height: 150%;
+        margin: 20px 0 32px 0;
+    }
+    .team-item>img{
+        width: 198px;
+        height: 240px;
+        border-radius: 12px;
+    }
+    .team-item{
+        width: 198px;
+        height: 363px;
+    }
+    .team-item>h3{
+        font-size: 20px;
+        line-height: 120%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        white-space: nowrap;
+        bottom: 87px;
+    }
+    .team-item>p{
+        font-size: 16px;
+        line-height: 125%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        white-space: nowrap;
+        bottom: 63px;
+    }
+    .team-item>a{
+        font-size: 16px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        white-space: nowrap;
+        bottom: 32px;
+    }
+    .team-mess{
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 0;
+    }
+    .team-mess>a>img{
+        width: 24px;
+        height: 24px;
+    }
+    .team-mess>a{
+        margin-right: 8px;
+        height: 24px;
+    }
+    .questions{
+        padding: 64px 0;
+    }
+    .questions>.container>h2{
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 129%;
+        margin-bottom: 20px;
+    }
+    .questions>.container>details{
+        padding: 21px 0 21px 24px;
+    }
+    .questions>.container>details>summary>h3{
+        font-size: 20px;
+        line-height: 140%;
+        max-width: 450px;
+    }
+    .questions>.container>details>summary::before{
+        height: 44px;
+        width: 44px;
+        transform: translate(0, -50%);
+        top: 50%;
+    }
+    .questions>.container>details[open] summary::before{
+        height: 44px;
+        width: 44px;
+        transform: translate(0, -50%);
+        top: 50%;
+    }
+    .questions>.container>details>p{
+        font-size: 16px;
+        line-height: 150%;
+        max-width: 450px;
+    }
+    .consalt-box{
+        flex-direction: column-reverse;
+    }
+    .consalt{
+        padding: 64px 0;
+    }
+    .calc-info{
+        padding: 32px 16px 30px 24px;
+        border-radius: 20px;
+        margin-bottom: 12px;
+    }
+    .calc-info>h3{
+        font-size: 28px;
+        line-height: 129%;
+        margin-bottom: 20px;
+    }
+    .calc-info>ul>li{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 16px;
+        max-width: 360px;
+    }
+    .calc-info>ul>li::before{
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .form{
+        margin: 0;
+        border-radius: 20px;
+        padding: 32px 24px 19px 24px;
+    }
+    .form>h3{
+        margin-bottom: 20px;
+    }
+    .form>p{
+        margin-bottom: 16px;
+    }
+    #tel{
+        padding: 16.8px 29px 16.8px 15px;
+    }
+    form>button{
+        width: 100%;
+        text-align: center;
+        padding: 14px 0;
+        margin: 12px 0;
+    }
+    .checkbox{
+        align-self: flex-start;
+    }
+    .checkbox>p{
+        max-width: 400px;
+    }
+    footer{
+        padding: 60px 0 26px 0;
+    }
+    .footer-info{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .footer-item{
+        margin-bottom: 40px;
+    }
+    .footer-item>p{
+        font-size: 16px;
+        line-height: 125%;
+        margin-bottom: 12px;
+    }
+    .footer-item>a, .footer-item>h3{
+        font-size: 18px;
+        line-height: 133%;
+    }
+    .footer-item:first-child, .footer-item:nth-child(2), .footer-item:nth-child(3), .footer-item:nth-child(4){
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .footer-item:last-child{
+        margin-top: 0;
+        margin-bottom: 32px;
+    }
+    .footer-item:last-child>a{
+        width: 30px;
+        height: 30px;
+    }
+    .map>iframe{
+        height: 240px;
+    }
+    .footer-bottom{
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer-bottom>a{
+        margin-right: 0;
+    }
+    .footer-bottom>a:first-child{
+        margin-top: 8px;
+    }
+    .right-carmini{
+        right: 200px;
+    }
+}
+@media (max-width: 480px){
+    .mySwiper>.swiper-wrapper>.swiper-slide{
+        width: 132px !important;
+    }
+    .myvideomini>.swiper-wrapper>.swiper-slide{
+        width: 132px !important;
+    }
+    .myvideo>.swiper-wrapper>.swiper-slide{
+        width: 132px !important;
+    }
+    .swiper-slide>img{
+        width: 120px;
+    }
+    .guaranree-item{
+        padding: 30px 24px;
+        width: 100%;
+    }
+    .guaranree-item>p{
+        max-width: 100%;
+        font-size: 16px;
+    }
+    .equipment-button>h2{
+        font-size: 26px;
+    }
+    .questions>.container>details>summary>h3{
+        max-width: 350px;
+    }
+    .questions>.container>details>p{
+        max-width: 350px;
+    }
+    .footer-info {
+        flex-direction: column;
+    }
+    .footer-item:first-child, .footer-item:nth-child(2), .footer-item:nth-child(3), .footer-item:nth-child(4){
+        margin-bottom: 28px;
     }
 }
 @media (max-width:376px){
@@ -1621,6 +2806,8 @@ footer{
     }
     .budget>div>img{
         margin: 0 16px 20px 16px;
+        width: auto;
+        height: 200px;
     }
     .budget>div>div{
         padding: 0 16px;
@@ -1660,6 +2847,10 @@ footer{
     }
     .myvideo>.swiper-wrapper{
         padding-bottom: 15px;
+    }
+    .telegram>div>img{
+        width: 100%;
+        height: 200px;
     }
     .telegram>div>div{
         padding: 0;
@@ -1800,6 +2991,7 @@ footer{
         padding: 32px 15px 34px 24px;
         margin-right: 0;
         margin-bottom: 12px;
+        border-radius: 20px;
     }
     .equipment-list>p{
         font-size: 16px;
@@ -1823,6 +3015,7 @@ footer{
     }
     .equipment-button{
         padding: 32px 24px;
+        border-radius: 20px;
     }
     .equipment-button-info{
         margin: 20px 0;
@@ -2066,4 +3259,78 @@ footer{
     .right-carmini{
         right: 200px;
     }
+}
+@media (max-width: 360px){
+    .about-img{
+        padding: 135px 180px;
+    }
+}
+@media (max-width: 320px){
+    .title{
+        font-size: 24px;
+    }
+    h1{
+        font-size: 26px;
+        margin-bottom: 180px;
+    }
+    .header-info>img{
+        top: 80px;
+        width: 290px;
+    }
+    .buy-item>p{
+        max-width: 255px;
+    }
+    .buy-info>h2{
+        font-size: 22px;
+    }
+    .buy-item>h3{
+        font-size: 22px;
+    }
+    .buyCars>div>p{
+        font-size: 20px;
+    }
+    .about-img{
+        padding: 120px 160px;
+    }
+    .our-guarantee>.center{
+        font-size: 24px;
+        text-align: center;
+        max-width: 270px;
+    }
+    .calc-info>h3{
+        font-size: 22px;
+    }
+    .guarantee-info>p{
+        font-size: 14px;
+    }
+    .questions>.container>h2{
+        font-size: 24px;
+    }
+    .questions>.container>details{
+        padding: 21px 0 21px 10px;
+    }
+    .questions>.container>details>summary>h3{
+        max-width: 225px;
+        font-size: 16px;
+    }
+    .questions>.container>details>p{
+        font-size: 14px;
+        max-width: 225px;
+    }
+    .calc-info>ul>li::before{
+        width: 32px;
+        height: 32px;
+        left: -45px;
+    }
+    .calc-info>ul>li{
+        margin-left: 30px;
+    }
+    form>button{
+        font-size: 18px;
+    }
+    .form-social>a{
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+    .form>p{font-size: 14px;}
 }
